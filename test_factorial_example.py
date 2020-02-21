@@ -3,7 +3,8 @@ import math
 import allure
  
 from factorial_example import factorial_function
- 
+
+@pytest.mark.usefixtures('test_debug_log')
 @allure.feature('Функциональное тестирование')
 def test_factorial_functionality():
     print("Inside test_factorial_functionality")

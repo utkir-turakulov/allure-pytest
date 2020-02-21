@@ -12,6 +12,7 @@ class TestGoogle:
     def test_google_1(self,request):
         driver = self.driver
         driver.get('http://google.com')
+        assert 1==2
 
     @pytest.mark.usefixtures('setup')
     def test_google_search(self,request):
